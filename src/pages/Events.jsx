@@ -17,7 +17,6 @@ const eventSchema = z.object({
   location: z.string().min(1, "Location is required"),
   description: z.string().min(1, "Description is required"),
 });
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -39,11 +38,12 @@ const Events = () => {
     });
     reset();
   };
+
   return (
     <div className="space-y-4">
       <Card>
         <CardHeader>
-          <CardTitle>Events</CardTitle>
+          <CardTitle>Create Event</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -85,7 +85,7 @@ const Events = () => {
           </form>
         </CardContent>
       </Card>
-    <Card>
+      <Card>
         <CardHeader>
           <CardTitle>Events</CardTitle>
         </CardHeader>
