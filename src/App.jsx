@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Home, Calendar, Users, Settings } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // Use the sidebar layout
-import Index from "./pages/Index.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Events from "./pages/Events.jsx";
 import Attendees from "./pages/Attendees.jsx";
